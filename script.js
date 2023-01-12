@@ -327,9 +327,15 @@ function main(){
         winnerData = mainData[0].split(optionSymbol);
     }
     if(count === 2){
-        winnerData = mainData[1].split(optionSymbol);
+        winnerData = mainData[2].split(optionSymbol);
     }
     if(count === 3){
+        winnerData = mainData[1].split(optionSymbol);
+    }
+    if(count === 4){
+        winnerData = mainData[0].split(optionSymbol);
+    }
+    if(count === 4){
         winnerData = mainData[3].split(optionSymbol);
     }
     winnerData.forEach((optionValue , index) => {
