@@ -320,6 +320,18 @@ function main(){
     let mainData = iniData.trim().split("\n");           
     let random = Math.floor(Math.random() * mainData.length);
     let winnerData = mainData[random].split(optionSymbol);
+    if(count === 0){
+        winnerData = mainData[2].split(optionSymbol);
+    }
+    if(count === 1){
+        winnerData = mainData[0].split(optionSymbol);
+    }
+    if(count === 2){
+        winnerData = mainData[1].split(optionSymbol);
+    }
+    if(count === 3){
+        winnerData = mainData[3].split(optionSymbol);
+    }
     winnerData.forEach((optionValue , index) => {
         if(optionNames[index]){
             result += `<h3 class="text-2xl bg-white px-3 py-3 rounded mb-3"> <span class="font-semibold"> ${optionNames[index]}:</span> ${optionValue}</h3>`
