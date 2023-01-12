@@ -312,7 +312,7 @@ function main(){
 
     let result = ``;
 
-    winnerSpan.innerHTML = `<h1 class="text-4xl mb-3 flex justify-between"> <span> Result </span> <button onclick="viewDefault();"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    winnerSpan.innerHTML = `<h1 class="text-2xl sm:text-4xl mb-3 flex justify-between"> <span> Result </span> <button onclick="viewDefault();"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
   </svg></button></h1>`
 
@@ -340,10 +340,10 @@ function main(){
     }
     winnerData.forEach((optionValue , index) => {
         if(optionNames[index]){
-            result += `<h3 class="text-2xl bg-white px-3 py-3 rounded mb-3"> <span class="font-semibold"> ${optionNames[index]}:</span> ${optionValue}</h3>`
+            result += `<h3 class="text-xl sm:text-2xl bg-white px-3 py-3 rounded mb-3"> <span class="font-semibold"> ${optionNames[index]}:</span> ${optionValue}</h3>`
             // <h3 class="text-4xl font-semibold">asdf</h3>
         }else{
-            result += `<h3 class="text-2xl bg-white px-3 py-3 rounded mb-3"> <span class="font-semibold"> Label : </span> ${optionValue}</h3>`
+            result += `<h3 class="text-xl sm:text-2xl bg-white px-3 py-3 rounded mb-3"> <span class="font-semibold"> Label : </span> ${optionValue}</h3>`
         }
         
     });    
